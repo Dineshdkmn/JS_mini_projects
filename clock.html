@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Clock</title>
+    <style>
+        body {
+            background-image: url('https://media.istockphoto.com/id/1487963070/vector/futuristic-time-clock-hand-and-clock-face-digital-transformation-abstract-technology.jpg?s=612x612&w=0&k=20&c=vBMcZmwTPz_ofcnAAOQroZr4EIa5BfOIbnkqgIUoxxk=');
+            background-size: 5000px;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .clock-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+        .clock {
+            font-size: 60px;
+            font-family: Orbitron, sans-serif;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-container">
+        <div id="DigitalClock" class="clock"></div>
+    </div>
+    <script type="text/javascript">
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var session = "AM";
+            
+            if (h == 0) {
+                h = 12;
+            }
+            if (h > 12) {
+                h = h - 12;
+                session = "PM";
+            }
+            h = h < 10 ? "0" + h : h;
+            m = m < 10 ? "0" + m : m;
+            s = s < 10 ? "0" + s : s;
+            
+            document.getElementById("DigitalClock").innerHTML = h + ":" + m + ":" + s + " " + session;
+            setTimeout(showTime, 1000);
+        }
+        showTime();
+    </script>
+</body>
+</html>
