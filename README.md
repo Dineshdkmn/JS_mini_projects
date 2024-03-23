@@ -17,7 +17,7 @@ A basic calculator web application that allows users to perform arithmetic opera
 - JavaScript
 
 ### Preview
-![Calculator Preview](calculator-preview.png)
+![Calculator Preview](calculator.png)
 
 ## 2. Digital Clock
 
@@ -34,7 +34,7 @@ A digital clock web application that displays the current time and updates every
 - JavaScript (Date object)
 
 ### Preview
-![Clock Preview](clock-preview.png)
+![Clock Preview](clock.png)
 
 ## 3. To-Do List
 
@@ -51,7 +51,7 @@ A to-do list web application where users can add and remove tasks dynamically.
 - JavaScript (DOM manipulation)
 
 ### Preview
-![To-Do List Preview](todolist-preview.png)
+![To-Do List Preview](todolist.png)
 
 ## How to Run
 1. Clone the repository to your local machine.
